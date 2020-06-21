@@ -249,7 +249,7 @@ $('#submission').submit(function(event) {
     fileArr = [];
     // send confirmation email
     $.ajax({
-      url: 'http://localhost:8088/send-email',
+      url: '/sendMail',
       method: 'POST',
       data: formData,
       success: function( data, textStatus, jQxhr ){
