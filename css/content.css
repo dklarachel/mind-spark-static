@@ -1,0 +1,15 @@
+#content {
+  width:100vw;
+  width:100%;
+  transition:ease-in-out 4s;
+  box-sizing:border-box;
+}
+
+/*
+#content {
+  padding:2vw 3vw;
+}
+*/
+
+
+

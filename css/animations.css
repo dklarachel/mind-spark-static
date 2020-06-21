@@ -1,0 +1,77 @@
+/* fade in */
+@keyframes fadein {from {opacity:0;}to {opacity:1;}}
+@-moz-keyframes fadein {from {opacity:0;}to {opacity:1;}}
+@-webkit-keyframes fadein {from {opacity:0;}to {opacity:1;}}
+@-o-keyframes fadein {from {opacity:0;}to {opacity: 1;}}
+
+/* bounce */
+ @keyframes bounce {
+  from {transform:translateY(2rem);}
+  to {transform:translateY(0rem);}
+}
+
+/* crossfade images */
+@keyframes switch {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes switch3 {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* flip icon on loading page */
+@keyframes flip {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(0) rotateY(90deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(0) rotateY(0deg);
+  }
+}
+
+/* go around circle */
+@keyframes clockwise {
+  0% {
+    transform:rotate(0);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes counterclockwise  {
+  0% {
+    transform:rotate(0);
+  }
+  100% {
+    transform:rotate(-360deg);
+  }
+}
+
+@keyframes backForth {
+  0% {
+    transform:rotate(-15deg) scale(1.2);
+  }
+  100% {
+    transform:rotate(15deg) scale(1.2);
+  }
+}
+
+/* feats scale in order */
+@keyframes featScale {
+  from {
+    transform:scale(1);
+  }
+  to {
+    transform:scale(1.25);
+  }
+}

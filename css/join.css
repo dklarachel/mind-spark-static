@@ -1,0 +1,82 @@
+#cont {
+  padding:4em;
+  box-sizing:border-box;
+  width:100%;
+  width:100vw;
+}
+
+#info {
+  margin-top:4em;
+  text-align:center;
+}
+
+#openings {
+  display:grid;
+  padding:15vh 10px 10vh 10px;
+  grid-gap:70px;
+  justify-content:center;
+  justify-items:center;
+}
+
+.role {
+  position:relative;
+  border-radius:20px;
+  background:#f6f6f6;
+  box-sizing:border-box;
+  margin-bottom:10vh;
+  transition:ease-in 0.4s;
+  box-shadow:15px 15px 0 0 var(--yellow); 
+}
+
+.role h2 {
+  text-align:center;
+  margin-top:calc(40px + 0.5em);
+}
+
+.role ul {
+  width:60%;
+  margin:auto;
+  padding:1em 0 3em 0;
+}
+
+.icon {
+  position:absolute;
+  left:calc(50% - 40px);
+  top:-40px;
+  width:80px;
+  height:80px;
+  padding:5px;
+  font-size:50px;
+  background:var(--teal);
+  border-radius:50%;
+  text-align:center;
+  padding:8px;
+  box-sizing:border-box;
+}
+
+.icon i {
+  color:var(--blue);
+}
+
+.role:hover {
+  transform:scale(1.2);
+  transition:ease-in 0.4s;
+}
+
+.apply {
+  text-align:center;
+  margin-bottom:2em;
+}
+
+.apply a {
+  font-family:'Karla', sans-serif;
+  background:var(--yellow);
+  border-radius:10px;
+  padding:0.5em;
+  transition:ease-in 0.4s;
+}
+
+.apply a:hover {
+  background:var(--teal);
+  transition:ease-in 0.4s;
+}

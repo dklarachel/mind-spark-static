@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+  <head></head>
+
+  <body>
+
+<!-- footer --> 
+    <div id="footer">
+
+<div class="socials">
+  <a target="_blank" href="https://instagram.com/mindsparkproject"><i class="fab fa-instagram fa-fw"></i></a>
+  <a target="_blank" href="https://twitter.com/MindSparkIntl"><i class="fab fa-twitter fa-fw"></i></a>
+  <a target="_blank" href="https://www.linkedin.com/company/mind-spark/"><i class="fab fa-linkedin-in fa-fw"></i></a>
+  <a target="_blank" href="https://www.facebook.com/mindsparkintl/"><i class="fab fa-facebook-f fa-fw"></i></a>
+  <a target="_blank"  href="https://discord.gg/heaEhvX"><i class="fab fa-discord fa-fw"></i></a>
+  <a class="contact"><i class="far fa-envelope"></i></a>
+</div>
+
+© Mind Spark 2020 
+</div>
+
+<script>
+var popup = document.getElementById('eform');
+var overlay = document.getElementsByClassName('overlay')[0];
+var close = popup.getElementsByClassName('close')[0];
+var submit = popup.getElementsByClassName('submit')[0];
+var btn = document.getElementsByClassName('contact');
+var form = document.getElementById('contact-form');
+
+for (let i = 0; i < btn.length; i++) {
+  btn[i].onclick = () => {
+    popup.style.opacity = '1';
+    overlay.style.opacity = '1';
+    popup.style.zIndex = '9999999';
+    overlay.style.zIndex = '9999999';
+    popup.style.top = '50%';
+    popup.style.transform = 'translateY(-50%)';
+    // close mobile menu
+    open.classList.remove('close');
+    menu.style.width = '0';
+    // animate button
+    line1.style.transform = 'rotate(0deg)';
+    line2.style.opacity = '1';
+    line3.style.transform = 'rotate(0deg)';
+  }
+}
+
+close.onclick = () => {
+  popup.style.opacity = '0';
+  overlay.style.opacity = '0';
+  popup.style.zIndex = '-1';
+  overlay.style.zIndex = '-1'; 
+  popup.style.top = '100%';
+  popup.style.transform = 'translateY(-100%)';
+}
+
+submit.onclick = () => {
+  form.reset();
+}
+
+// footer triangles
+  var footer = document.getElementById('footer');
+  var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0); 
+  var width = Math.round(vw/40);
+  var prevLeft, resize, prevVW;
+
+  console.log(vw);
+
+  makeTriangles();
+  
+  window.onresize = () => {
+    prevVW = vw;
+    vw = Math.min(document.documentElement.clientWidth || 0, window.innerWidth || 0); 
+    width = Math.round(vw/40);
+    resize = vw - prevVW;
+    addTriangles();
+  }
+
+function removeTriangles () {
+  for (let i = 0; i < 40; i++) {
+    let triangle = document.getElementsByClassName('triangle')[i];
+    triangle.remove();
+  }
+}
+
+function makeTriangles () {
+  for (let i = 0; i < 40; i++) {
+    let div = document.createElement('div');
+    div.classList.add('triangle');
+    div.style.borderLeft = width + 'px solid transparent';
+    div.style.borderRight = width + 'px solid transparent';
+    div.style.borderBottom = width + 'px solid var(--teal)';
+    div.style.top = -0.5*width + 'px';
+    div.style.left = i*width + (-0.5*width) + 'px';
+    if (i == 39) {
+      prevLeft = i*width - 0.5*width + width;
+    }
+    /*footer.appendChild(div); */
+    footer.insertBefore(div, footer.firstChild);
+  }
+}
+
+function addTriangles () {
+  console.log('add');
+  for (let i = 0; i < resize; i++) {
+    let div = document.createElement('div');
+    div.classList.add('triangle');
+    div.style.borderLeft = width + 'px solid transparent';
+    div.style.borderRight = width + 'px solid transparent';
+    div.style.borderBottom = width + 'px solid var(--teal)';
+    div.style.top = -0.5*width + 'px';
+    div.style.left = i*width + prevLeft + 'px';
+    footer.insertBefore(div, footer.firstChild);
+    if (i == (resize - 1)) {
+      prevLeft = i*width + prevLeft + width;
+    }
+  }
+}
+</script>
+
+  </body>
+
+</html>

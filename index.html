@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169896918-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169896918-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Mind Spark International 🗲</title>
+    <link rel="shortcut icon" href="/images/logo.png">
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="/css/content.css" rel="stylesheet" type="text/css"/> <link href="/slick/slick.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-jvectormap-2.0.5.css" type="text/css" media="screen"/>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+   <script src="slick/slick.min.js"></script>
+
+    <script src="js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="js/jquery-jvectormap-world-mill.js"></script>
+    
+    <script src="js/map.js"></script>
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+   
+   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/4a07f93241.js" crossorigin="anonymous"></script>
+
+    <script>
+    $(window).on('load', function () {
+        
+        $('#footer').load("footer.html");
+  });
+    </script>
+  
+  </head>
+
+  <body>
+
+<!-- loading page -->
+<div id="loader">
+  <div id="loadcont">
+    <div class="spinner"><img src="/svgs/logo.svg"/></div>
+      
+    <!-- load bar 
+    <div class="loadbarwrap">
+      <div class="percentage" id="percent"></div>
+      <div class="loader">
+      <div class="trackbar">
+      <div class="loadbar"></div>
+      </div>
+      <div class="glow"></div>
+      </div>
+    </div>
+    -->
+
+  </div>
+</div>
+
+
+<!-- header/cover image -->
+<div id="cover">
+  <div class="cont">
+
+    <img src="/svgs/logo.svg" class="logo"/>
+    <h1>mind spark</h1>
+    <div class="mission">a thought bubble for students</div>
+
+    <div class="down"><i class="fas fa-chevron-down"></i></div>
+
+  </div>
+
+  <!-- bolt -->
+  <div id="bolt">
+    <img src="images/doodle teal.png"/>
+
+<!-- 
+  <svg height="100vh;" viewBox="0 0 200 300" class="svg-box-content">
+    <defs>
+        <clipPath id="boltPath">
+          <polygon points="45 0, 100 0, 55 100, 0 100"/>
+          <polygon points="65 60, 120 60, 75 160, 20 160"/>
+          <polygon points="65 120, 20 300, 120 120"/>
+        </clipPath>
+    </defs>
+  </svg>
+-->
+</div>
+
+<svg height="100vh">
+    <defs>
+        <clipPath id="boltPath">
+          
+        </clipPath>
+    </defs>
+  </svg>
+
+  <!-- bolt end -->
+
+</div>
+
+<!-- header -->
+<header id="header">
+
+  <div class="name">
+    <div class="logo"><img src="svgs/logo.svg"/></div>
+  
+    <div class="mission">
+      <h1>mind spark</h1>
+      <p>a thought bubble for students</p>
+    </div>
+  </div>
+
+  <div class="menu">
+    <a href="/">home</a>
+    <a class="contact">contact</a>
+    <a href="/team.html">the team</a>
+    <a href="/join.html">join us</a>
+    <a href="/support.html">support us</a>
+    <a href="/submit.html">submit</a>
+  </div>
+
+</header>
+
+<!-- mobile menu -->
+<div id="micon">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+</div>
+<div id="mobilemenu">
+  <h1>mind spark</h1>
+  <div class="mlinks">
+  <a href="/"><i class="fas fa-home fa-fw"></i>home</a>
+  <a class="contact"><i class="far fa-envelope fa-fw"></i>contact</a>
+  <a href="/team.html"><i class="fas fa-users fa-fw"></i>the team</a>
+  <a href="/join.html"><i class="fas fa-star fa-fw"></i>join us</a>
+  <a href="/support.html"><i class="fas fa-hand-holding-heart"></i>support us</a>
+  <a href="/submit.html"><i class="fas fa-pencil-alt fa-fw"></i>submit</a>
+  </div>
+
+  <div class="socials">
+    <a target="_blank" href="https://instagram.com/mindsparkproject"><i class="fab fa-instagram fa-fw"></i></a>
+    <a target="_blank" href="https://twitter.com/MindSparkIntl"><i class="fab fa-twitter fa-fw"></i></a>
+    <a target="_blank" href="https://www.linkedin.com/company/mind-spark/"><i class="fab fa-linkedin-in fa-fw"></i></a>
+    <a target="_blank" href="https://www.facebook.com/mindsparkintl/"><i class="fab fa-facebook-f fa-fw"></i></a>
+  </div>
+</div>
+
+
+<!-- content -->
+<div id="content">
+
+
+<!-- about & video -->
+<div class="section" id="intro">
+
+<!-- show on mobile -->
+<div class="mhead">
+    <img src="images/logo.png"/>
+  
+    <div class="title">
+      <h1>mind spark</h1>
+      <p>a thought bubble for students</p>
+    </div>
+</div>
+
+
+<video controls autoplay poster="images/thumbnail.jpeg">
+  <source src="trailer.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+</video>
+
+
+<!--
+ <div class="video_wrapper">
+  <iframe src="https://www.youtube.com/embed/0ISof8jW0iQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+-->
+
+<div class="post">
+  <h1>what is mind spark?</h1>
+Mind Spark is a student-based international magazine dedicated to connecting students around the world through STEM. We encourage students who are passionate about STEM to publish their thoughts and ideas related to their passion for our platform. 
+</div>
+
+<div class="quote">
+   our mission is to <span>promote ingenuity and creative thinking in STEM through student narratives</span>
+
+</div>
+
+</div>
+
+
+<!-- types of publications -->
+<div class="section" id="works">
+<h2>On our platform, users can publish works such as articles, editorials, research, illustrations, and even failures!</h2> 
+
+  <div class="entry-wrapper">
+  <div class="entry">
+    <div class="image">
+      <img class="img1" src="/images/examples/marine1.jpeg"/>
+      <img class="img2" src="/images/examples/marine2.jpeg"/>
+    </div>
+    <p>
+      Competitive capability of <i>Mytella charruana</i>, an invasive mussel species versus local mussel species, e.g. <i>Perna sp</i>
+    </p>
+  </div>
+  </div>
+
+  <div class="entry-wrapper">
+  <div class="entry">
+    <div class="image">
+      <img class="img1" src="/images/examples/robotics1.jpeg"/>
+      <img class="img2" src="/images/examples/robotics2.jpeg"/>
+    </div>
+    <p>
+      Failed prototype of a quadruped Arduino robot for aiding in search and rescue operations
+    </p>
+  </div>
+  </div>
+
+  <div class="entry-wrapper">
+  <div class="entry">
+    <div class="image">
+      <img class="ex1" src="/images/examples/ex1.png"/>
+      <img class="ex2" src="/images/examples/ex2.png"/>
+      <img class="ex3" src="/images/examples/ex3.png"/>
+    </div>
+    <p>
+      This could be your project!<br>
+      <a href="/submit.html">submit</a>
+    </p>
+  </div>
+  </div>
+
+
+</div>
+
+<!-- features of platform -->
+<div class="section" id="feats">
+
+  <div class="left">
+    <h1>publishing should be an 
+      <span style="color:var(--teal)">interactive</span>
+    experience.</h1> 
+  </div>
+
+  <div class="right">
+    <h2>that's why we offer the ability to like, share, comment, and follow creators </h2>
+    <div class="icons">
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-share"></i>
+      <i class="fas fa-comment"></i>
+      <i class="fas fa-user-plus"></i>
+    </div>
+  </div>
+</div>
+
+
+<!-- subjects -->
+<div class="section" id="subjects">
+
+  <h1>WE WELCOME WORKS ABOUT</h1>
+
+<div class="cwrapper">
+  <div class="circle">
+    <i class="fas fa-atom fa-fw"></i>
+    <div class="item" title="biology"><i class="fas fa-heartbeat fa-fw"></i></div>
+    <div class="item" title="physics"><i class="fas fa-magnet fa-fw"></i></div>
+    <div class="item" title="chemistry"><i class="fas fa-flask fa-fw"></i></div>
+    <div class="item" title="earth science"><i class="fas fa-globe-americas fa-fw"></i></div>
+    <div class="item" title="astronomy"><i class="fas fa-rocket fa-fw"></i></div>
+  </div>
+  <h2>natural sciences</h2>
+</div>
+
+<div class="cwrapper">
+  <div class="circle">
+    <i class="fas fa-cogs fa-fw"></i>
+    <div class="item" title="aerospace engineering"><i class="fas fa-plane fa-fw"></i></div>
+    <div class="item" title="civil engineering"><i class="fas fa-hard-hat fa-fw"></i></div>
+    <div class="item" title="mechanical engineering"><i class="fas fa-wrench fa-fw"></i></div>
+    <div class="item" title="electrical engineering"><i class="fas fa-plug fa-fw"></i></div>
+    <div class="item" title="industrial engineering"><i class="fas fa-industry fa-fw"></i></div>
+  </div>
+  <h2>engineering</h2>
+</div>
+
+<div class="cwrapper">
+  <div class="circle">
+    <i class="fas fa-laptop-code fa-fw"></i>
+    <div class="item" title="artifical intelligence"><i class="fas fa-brain fa-fw"></i></div>
+    <div class="item" title="programming"><i class="fas fa-code fa-fw"></i></div>
+    <div class="item" title="mathematics"><i class="fas fa-calculator fa-fw"></i></div>
+    <div class="item" title="robotics"><i class="fas fa-robot fa-fw"></i></div>
+    <div class="item" title="data science"><i class="fas fa-database fa-fw"></i></div>
+  </div>
+  <h2>computer science</h2>
+</div>
+
+  <h1>. . . the possibilities are endless!</h1>
+
+</div>
+
+
+<!-- start timeline -->
+<div class="section" id="timeline">
+
+<h1>our progress.</h1>
+
+<!-- mobile version -->
+<div id="mtimeline">
+
+  <div class="mevent">
+    <b>May 10, 2020</b>
+    <h1>organization founded</h1>
+  </div>
+
+  <div class="mevent">
+    <b>May 11, 2020</b>
+    <h1>Twitter account launched</h1>
+  </div>
+
+  <div class="mevent">
+    <b>May 13, 2020</b>
+    <h1>Instagram account launched</h1>
+  </div>
+
+  <div class="mevent">
+    <b>May 14, 2020</b>
+    <h1>LinkedIn account launched</h1>
+  </div>
+
+  <div class="mevent">
+    <b>June 17, 2020</b>
+    <h1>initial website launch</h1>
+  </div>
+  
+  <div class="mevent">
+    <b>July 30, 2020</b>
+    <h1>app launch</h1>
+  </div>
+
+</div>
+
+
+<!-- timeline -->
+<div class="carousel">
+
+      <div class="ewrapper">
+        <div class="date">May 10, 2020</div>
+        <div class="event"></div>
+       
+          <div class="desc">
+            <h1>organization founded</h1>
+          
+          </div>
+
+      </div>
+
+     <div class="ewrapper">
+        <div class="date">May 11, 2020</div>
+        <div class="event"></div>
+       
+          <div class="desc">
+            <h1>Twitter account launched</h1>
+          
+          </div>
+
+      </div>
+
+      <div class="ewrapper">
+        <div class="date">May 13, 2020</div>
+        <div class="event"></div>
+       
+          <div class="desc">
+            <h1>Instagram account launched</h1>
+          
+          </div>
+
+      </div>
+
+      <div class="ewrapper">
+        <div class="date">May 14, 2020</div>
+        <div class="event"></div>
+       
+          <div class="desc">
+            <h1>LinkedIn account launched</h1>
+          
+          </div>
+
+      </div>
+
+      <div class="ewrapper">
+        <div class="date">June 17, 2020</div>
+        <div class="event"></div>
+       
+          <div class="desc">
+            <h1>initial website launch</h1>
+          
+          </div>
+
+      </div>
+
+      <div class="ewrapper">
+        <div class="date">July 30, 2020</div>
+        <div class="event"></div>
+       
+          <div class="desc">
+            <h1>app launch</h1>
+
+          </div>
+
+      </div>
+
+      
+      
+    </div>
+
+</div>
+
+<!-- end timeline -->
+
+
+<!-- map -->
+<div class="section" id="map">
+
+<div id="map-wrapper">
+  <div id="world-map"></div>
+</div>
+
+
+<div class="right">
+  <div class="top">
+    <h1>mind spark is an 
+    <span style="color:var(--teal)">international</span>
+     project.</h1>
+ <i> We take pride in the diversity of our team, with members, applicants, and submissions from all around the globe.</i>
+   </div>
+   
+   <div class="key">
+     <li><div class="color" style="background:var(--teal);"></div> members</li>
+     <li><div class="color" style="background:var(--yellow);border-radius:50%;border:2px solid var(--blue);"></div> members' cities</li>
+     <li><div class="color" style="background:var(--blue);"></div> applicants</li>
+     <li style="opacity:0.5;"><div class="color" style="background:var(--yellow);"></div> submissions</li>
+   </div>
+
+   <div class="links">
+     <a href="/join.html">become a member</a>
+     <a href="/submit.html">submit</a>
+   </div>
+
+</div>
+
+</div>
+
+
+<!-- start posts -->
+<div id="entries" style="display:none;">
+
+<!-- mock submission -->
+<div class="post">
+  <h1>post title</h1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor id aliquet lectus proin nibh nisl condimentum. Sit amet dictum sit amet justo donec enim diam. Euismod nisi porta lorem mollis aliquam. Purus gravida quis blandit turpis cursus in hac. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Purus in massa tempor nec feugiat nisl. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus. Interdum consectetur libero id faucibus. Aliquet porttitor lacus luctus accumsan tortor posuere. Tellus id interdum velit laoreet id donec. Scelerisque fermentum dui faucibus in ornare quam viverra orci.
+</div>
+
+</div>
+<!-- end posts -->
+
+</div>
+<!-- end content -->
+
+
+<!--footer -->
+<div id="footer"></div>
+
+<!-- popup email -->
+<div class="overlay">
+  <div id="eform">
+
+    <div class="close"><i class="fas fa-times fa-fw"></i></div>
+
+    <div class="side">
+      <h1>get in touch.</h1>
+    </div>
+
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+      <div class="form-group">
+        <label>name</label>
+        <input type="text" name="user_name">
+      </div>
+      <div class="form-group">
+        <label>email</label>
+        <input type="email" name="user_email">
+      </div>
+    <div class="form-group">
+      <label>message</label>
+      <textarea name="message" placeholder="type your questions and/or comments here..."></textarea>
+    </div>
+    <div class="form-group">
+      <input class="submit" type="submit" value="Send">
+    </div>
+    </form>
+    
+  </div>
+</div>
+<!-- end popup email -->
+
+<!-- scroll to top -->
+<div class="scrollup"><a href="#"><i class="fas fa-chevron-up"></i></a></div>
+
+
+<script>
+// scroll to top by @html-tuts
+$(window).scroll(function(){if($(window).scrollTop()>100){$('.scrollup').fadeIn('slow')}else{$('.scrollup').fadeOut('slow')}});$('.scrollup').click(function(){$('html, body').animate({scrollTop:0},700);return!1})
+</script>
+
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/circle.js"></script>
+    <script type="text/javascript" src="js/index header.js"></script> 
+    <script type="text/javascript" src="slick/initialize.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <script>
+      firebase.analytics();
+    </script>
+
+    <script type="text/javascript" src="/js/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+       $(document).ready(function(){
+           $("[title]").style_my_tooltips({
+               tip_follows_cursor:true,
+               tip_delay_time:200,
+               tip_fade_speed:300
+           }
+               );
+       });
+   })(jQuery);
+   </script>
+
+
+
+  </body>
+</html>

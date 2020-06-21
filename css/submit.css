@@ -1,0 +1,322 @@
+#cont {
+  box-sizing:border-box;
+  width:100%;
+  width:100vw;
+}
+
+#info {
+  margin-top:4em;
+  text-align:center;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#info .span {
+  background:#f6f6f6;
+  border-radius:1em;
+  padding:1em;
+  font-family:'Source Sans Pro', sans-serif;
+  font-size:0.8em;
+}
+
+#info h1 {
+  width:100%;
+}
+
+.desc {
+  width:100%;
+  //margin-right:2em;
+  padding:0 1.5em 1.5em 1.5em;
+  box-sizing:border-box;
+}
+
+#guidelines {
+  width:100%;
+  text-align:center;
+  background:var(--yellow);
+  box-sizing:border-box;
+  padding:0.75em 2em 1.5em 2em;
+  border-radius:20px;
+  font-size:0.9em;
+}
+
+#guidelines h2 {
+  width:100%;
+}
+
+#guidecont {
+  position:relative;
+  width:100%;
+  margin:3em 0 0 -0.15em;
+  box-sizing:border-box;
+}
+
+#guidelines h3 {
+  color:var(--blue);
+  padding:0.5em;
+  background:var(--yellow);
+  font-family:'Karla', sans-serif;
+  text-transform:uppercase;
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%) translateY(-100%);
+  text-align:center;
+}
+
+.guidewrap {
+  margin-bottom:3.5em;
+  text-align:left;
+}
+
+.guidesection {
+  position:relative;
+  border-radius:1em;
+  border:4px solid var(--teal);
+}
+
+.guidesection p {
+  padding:0 2em 1em 2em;
+  width:auto;
+}
+
+.guidesection ul {
+  border-radius:1em;
+  padding:0 3em 1em 3em;
+}
+
+.guidenum {
+  position:absolute;
+  top:0;
+  left:-3em;
+  width:2.5em;
+  height:2.5em;
+  padding:0.7em 1em 1em 0.7em;
+  text-align:center;
+  border-radius:50%;
+  background:var(--teal);
+  color:var(--blue);
+  box-sizing:border-box;
+  font-size:2em;
+  font-weight:800;
+  font-family:'Karla', sans-serif;
+}
+
+#form {
+  margin-top:4em;
+  position:relative;
+}
+
+#submission {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+input, #editor {
+  background:#f6f6f6;
+}
+
+#editor {
+  font-family:'Source Sans Pro', sans-serif;
+  font-size:0.8em;
+}
+
+#imgupload {
+  float:right;
+}
+
+#imgupload svg {
+  max-width:1em;
+}
+
+.ql-bubble .ql-editor img {
+  min-width:1em;
+    max-width: 100%;
+}
+
+input[type=file] {
+  width:auto;
+  display:inline-block;
+}
+
+#fileNames {
+  margin:1.5em 0;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#fileNames .fileItem {
+  border:2px solid var(--teal);
+  border-radius:10px;
+  padding:0.45em;
+  margin:0 0.85em 0.85em 0;
+  font-size:16px;
+}
+
+.fileItem span {
+  line-height:75%;
+  font-size:1.5rem;
+  margin:0 0.2em 0 0.3em;
+  font-weight:800;
+  color:var(--yellow);
+}
+
+.fileItem span:hover {
+  cursor:pointer;
+}
+
+#success-msg {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background:var(--yellow);
+  border-radius:15px;
+  text-align:center;
+  z-index:-1;
+  transition:0.8s;
+  opacity:0;
+}
+
+#success-cont {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+
+#success-msg i {
+  display:block;
+  font-size:4em;
+  color:var(--teal);
+}
+
+#success-msg span, #submission input[type=button] {
+  background:var(--teal);
+  color:var(--blue);
+  border-radius:5px;
+  border:none;
+  padding:0.5em;
+  font-family:'Karla', sans-serif;
+  text-transform:lowercase;
+  transition:ease-in 0.4s;
+}
+
+#success-msg span:hover {
+  color:var(--yellow);
+  transition:ease-in 0.4s;
+  cursor:pointer;
+}
+
+#submission input[type=button]:hover {
+  cursor:pointer;
+
+}
+
+#submission input[type=button] {
+  display:inline-block;
+  width:auto;
+}
+
+.radio-group {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  background:#f6f6f6;
+  border-radius:1em;
+  padding:1em;
+}
+
+.radio-group label {
+  background:var(--yellow);
+  border-radius:50%;
+  box-sizing:border-box;
+  text-align:center;
+  padding:1.7em 1.5em 1.5em 1.5em;
+  width:110px;
+  height:110px;
+}
+
+.radio-group label i {
+  font-size:2em;
+  transition:0.4s ease-in-out;
+  color:var(--blue);
+}
+
+.radio-group label:hover i {
+  animation:backForth 0.5s infinite alternate linear;
+  transition:0.4s ease-in-out;
+}
+
+.radio-group input[type="radio"], .radio-group input[type="checkbox"] {
+  display:none;
+}
+
+input[type="radio"]:checked+label, .radio-group input[type="checkbox"]:checked+label {
+  background:var(--teal);
+}
+
+label[for="other"] {
+  position:relative;
+}
+
+label[for="other"] input[type="text"] {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) translateX(-50%);
+  left:50%;
+  width:106px;
+  opacity:0;
+  z-index:-1;
+  background:var(--teal);
+}
+
+label[for="other"] input[type="text"]::placeholder {
+  color:var(--blue);
+}
+
+label[for="other"] input[type="text"]:focus {
+  box-shadow:none;
+}
+
+.checkbox-group {
+  margin-bottom:2em;
+}
+
+.form-cap {
+  color:red;
+  background:rgb(255, 0, 0, 0.1);
+  padding:0.6em;
+  font-size:0.6em;
+  border-radius:1em;
+  margin-top:5px;
+  display:none;
+}
+
+span#to-guidelines {
+  border-bottom:2px solid var(--yellow);
+}
+
+span#to-guidelines:hover {
+  cursor:pointer;
+}
+
+#error-text, #error-submit {
+  transition:0.4 ease-in-out;
+}
+
+@media all and (min-width: 600px) {
+  #cont {
+    padding:4em;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #cont {
+    padding:1em;
+  }
+}
+
