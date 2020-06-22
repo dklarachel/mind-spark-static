@@ -20,7 +20,7 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-app.post('/sendMail',  (req, res) => {
+app.post('/sendMail/',  (req, res) => {
     cors(req, res, () => {
 
         const mailOptions = {
