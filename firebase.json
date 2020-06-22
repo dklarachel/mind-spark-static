@@ -33,6 +33,9 @@
     "rules": "storage.rules"
   },
   "emulators": {
+    "firestore": {
+      "port": "4000"
+    },
     "functions": {
       "port": null
     },
