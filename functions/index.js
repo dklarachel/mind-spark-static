@@ -18,8 +18,8 @@ var transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'rachlin440@gmail.com',
-        pass: 'purpleepix4'
+        user: 'mindsparkinternational@gmail.com',
+        pass: 'mindsparkintl234'
     }
 });
 
@@ -29,10 +29,8 @@ exports.sendEmail = functions.firestore
     .onCreate((snap, context) => {
 
         var subject = '';
+        const subjectArr = snap.data().subject;
         if (snap.data().subject.length > 1) {
-            const subjectArr = snap.data().subject;
-            console.log(subjectArr);
-
             for (let i = 0; i < subjectArr.length; i++) {
                 if (i == (subjectArr.length - 1)) {
                     subject += ` and ${subjectArr[i]}`;
@@ -45,12 +43,12 @@ exports.sendEmail = functions.firestore
         }
 
         const mailOptions = {
-            from: `Mind Spark International <rachlin440@gmail.com>`,
+            from: `Mind Spark International <mindsparkinternational@gmail.com>`,
             to: snap.data().email,
             subject: 'Submission Confirmation',
             html: 
             `
-            <p>Hey there, ${snap.data().name}. This is just to let you know that we’ve received your <b>${snap.data().type}</b> about<b>${subject}</b>. Below is a copy of the other information you’ve provided us with:</p>
+            <p>Hey there, ${snap.data().name}. This is just to let you know that we’ve received your <b>${snap.data().type}</b> about<b> ${subject}</b>. Below is a copy of the other information you’ve provided us with:</p>
 
             <p style=”padding:40px; background:#f6f6f6; border-radius:20px;”>
                 <b>age:</b> ${snap.data().age} <br>
