@@ -28,35 +28,64 @@ exports.sendEmail = functions.firestore
     .document('psubmissions/{submissionId}')
     .onCreate((snap, context) => {
 
+        // get subject(s)
         var subject = '';
         const subjectArr = snap.data().subject;
-        if (snap.data().subject.length > 1) {
+        if (subjectArr.length > 2) {
             for (let i = 0; i < subjectArr.length; i++) {
                 if (i == (subjectArr.length - 1)) {
-                    subject += ` and ${subjectArr[i]}`;
+                    subject += ` and <b>${subjectArr[i]}</b>`;
                 } else {
-                    subject += ` ${subjectArr[i]},`;
+                    subject += ` <b>${subjectArr[i]}</b>,`;
+                }
+            }
+        } else if (subjectArr.length == 2) {
+            subject += ` <b>${subjectArr[0]}</b> and <b>${subjectArr[1]}</b>`
+        }
+        else {
+            subject = ` <b>${subjectArr[0]}</b>`;
+        }
+
+        // get file name(s)
+        var files = '';
+        const fileArr = snap.data().files;
+        if (fileArr.length > 1) {
+            for (let i = 0; i < fileArr.length; i++) {
+                if (i == (fileArr.length - 1)) {
+                    files += `${fileArr[i]}`;
+                } else {
+                    files += `${fileArr[i]}, `;
                 }
             }
         } else {
-            subject = ` ${subjectArr[0]}`;
+            files = `${fileArr[0]} `;
+        }
+
+        // get text
+        var text = snap.data().text;
+        if (text.length > 500) {
+            text = text.substr(0, 500);
+            text += '...';
         }
 
         const mailOptions = {
-            from: `Mind Spark International <mindsparkinternational@gmail.com>`,
+            from: `Mind Spark International <contact@mindsparkintl.co>`,
             to: snap.data().email,
             subject: 'Submission Confirmation',
             html: 
             `
-            <p>Hey there, ${snap.data().name}. This is just to let you know that we’ve received your <b>${snap.data().type}</b> about<b> ${subject}</b>. Below is a copy of the other information you’ve provided us with:</p>
+            <p>Hey there, ${snap.data().name}. This is just to let you know that we’ve received your <b>${snap.data().type}</b> about${subject}. Below is a copy of the other information you’ve provided us with:</p>
 
             <p style=”padding:40px; background:#f6f6f6; border-radius:20px;”>
                 <b>age:</b> ${snap.data().age} <br>
                 <b>country:</b> ${snap.data().country} <br>
-                <b>title:</b> ${snap.data().title} 
+                <b>title:</b> ${snap.data().title} <br>
+                <b>files:</b> ${files} <br>
+                <b>text:</b> ${text}
             </p>
 
-            <p>Thanks for submitting and being part of our mission to connect the students of the STEM world! We look forward to seeing your work!</p>
+            <p>Thanks for submitting and being part of our mission to connect the students of the STEM world! Your work will be processed through our two-stage editing protocol to ensure superb quality and scientific accuracy. We are in the process of building our online platform, and it will be ready by the end of July, so that is when you will hear back from us about the status of your submission. We look forward to seeing your creation!</p>
+            <p>If you have any questions, feel free to contact us at <a href="mailto:contact@mindsparkintl.co">contact@mindsparkintl.co</a>.</p>
 
             <p>
             Warm regards, <br>
