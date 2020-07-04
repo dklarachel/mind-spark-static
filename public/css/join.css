@@ -25,7 +25,7 @@
   box-sizing:border-box;
   margin-bottom:10vh;
   transition:ease-in 0.4s;
-  box-shadow:15px 15px 0 0 var(--yellow); 
+  box-shadow:15px 15px 15px 5px var(--yellow); 
 }
 
 .role h2 {
@@ -54,8 +54,14 @@
   box-sizing:border-box;
 }
 
-.icon i {
+.icon i, .icon img {
   color:var(--blue);
+}
+
+.icon img {
+  width:55px;
+  height:55px;
+  margin:auto;
 }
 
 .role:hover {
