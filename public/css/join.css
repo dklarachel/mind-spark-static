@@ -25,7 +25,7 @@
   box-sizing:border-box;
   margin-bottom:10vh;
   transition:ease-in 0.4s;
-  box-shadow:15px 15px 15px 5px var(--yellow); 
+  box-shadow:15px 15px 0 0 var(--yellow); 
 }
 
 .role h2 {
@@ -45,17 +45,17 @@
   top:-40px;
   width:80px;
   height:80px;
-  padding:5px;
-  font-size:50px;
+  font-size:40px;
   background:var(--teal);
   border-radius:50%;
   text-align:center;
-  padding:8px;
+  padding:20px 8px 8px 8px;
   box-sizing:border-box;
 }
 
 .icon i, .icon img {
   color:var(--blue);
+  padding-top:10px;
 }
 
 .icon img {

@@ -26,7 +26,7 @@ $(function(){
     series: {
       regions: [{
         values: {
-          // applicants (& members - also have markers) (blue)
+          // applicants  (blue)
           KE:'var(--blue)',
           GH:'var(--blue)',
           IR:'var(--blue)',
@@ -36,7 +36,7 @@ $(function(){
           // submissions (yellow)
           BD:'var(--yellow)',
           JP:'var(--yellow)',
-          IN:'var(--yellow)',
+          //IN:'var(--yellow)',
           BD:'var(--yellow)',
           TW:'var(--yellow)',
           MA:'var(--yellow)',
@@ -47,6 +47,8 @@ $(function(){
           PH:'var(--teal)',
           NG:'var(--teal)',
           TR:'var(--teal)',
+          IN:'var(--teal)'
+
           /*
           SG: {latLng: [1.35, 103.82], name: 'Singapore'},
           SG: 'var(--teal)'
@@ -68,7 +70,7 @@ $(function(){
       {latLng: [6.76, 125.35], name: 'Digos City, PH'},
       {latLng: [14.68, 121.04], name: 'Quezon City, PH'},
       {latLng: [6.52, 3.38], name: 'Lagos, NG'},
-      {latLng: [41.01, 28.98], name: 'Istanbul, TU'}
+      {latLng: [12.97, 77.59], name: 'Bangalore, IN'}
     ]
   });
 });

@@ -133,3 +133,7 @@
   border-right:1em solid transparent;
   border-top:calc(2em * 0.866) solid #f6f6f6;
 } 
+
+.carousel a {
+  color: black;
+}

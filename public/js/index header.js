@@ -51,13 +51,13 @@ $(window).scroll(function() {
   var y = $(this).scrollTop(),
       cHeight = $(window).height();
   if (y >= cHeight) {
-    console.log('hide!');
+    //console.log('hide!');
     cover.css({'display':'none'});
   }
   if (!animated) {
-    console.log('not animated');
+    //console.log('not animated');
     if (y > lastY) {
-        console.log('hide');
+        //console.log('hide');
         header.css({'top':'-7.5em'});
     } /*else if (y > winHeight) {
         header.css({'top':'-7em'});
@@ -66,7 +66,7 @@ $(window).scroll(function() {
       }
     
   } else {
-    console.log('animated');
+    //console.log('animated');
     /*
     if (y > winheight) {
       header.css({'top':'0'});

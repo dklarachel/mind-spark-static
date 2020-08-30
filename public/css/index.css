@@ -167,6 +167,55 @@ video:focus {
   transform:rotate(6deg);
 }
 
+.podcasts {
+  background-image: url("/images/podcast-logos/bg.gif");
+  background-repeat: repeat;
+  background-position: center center;
+  margin-top: 5rem;
+}
+
+.podcasts-container {
+  position: relative;
+  border-radius: 2rem;
+  background: #f6f6f6;
+  padding: 2rem;
+  max-width: 34vw;
+  margin: 2rem auto;
+}
+
+.podcasts h1 {
+  background: var(--yellow);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-50% - 1.5rem/2));
+}
+
+.podcasts-desc {
+  margin-top: 1.75rem;
+}
+
+.podcast-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.podcast-links img {
+  width: 5rem;
+  border-radius: 1.5rem;
+  margin-right: 0.8rem;
+  transition: 0.4s ease-in-out
+}
+
+.podcast-links img:hover {
+  border-radius: 50%;
+  transition: 0.4s ease-in-out
+}
+
 /* works examples */
 #works {
   display:flex;

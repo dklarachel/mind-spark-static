@@ -356,6 +356,10 @@ and (max-width: 1430px) {
  border-radius:5px;
 }
 
+#mtimeline a {
+  color: black;
+}
+
 .mevent:nth-child(odd) b {
  background:var(--teal);
 }
